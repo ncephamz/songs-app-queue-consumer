@@ -15,13 +15,13 @@ class MailSender {
  
     sendEmail(targetEmail, content) {
         const message = {
-            from: 'Songs Apps',
+            from: 'Musics Apps',
             to: targetEmail,
-            subject: 'Ekspor Lagu',
-            text: 'Terlampir hasil dari ekspor lagu',
+            subject: 'Ekspor Playlists',
+            text: 'Terlampir hasil dari ekspor playlists',
             attachments: [
                 {
-                    filename: 'songs.json',
+                    filename: 'playlists.json',
                     content,
                 },
             ],
